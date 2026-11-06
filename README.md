@@ -34,3 +34,6 @@ TaskBoard дозволяє створювати завдання, ставити
 1. Склонуй репозиторій:
 ```bash
 git clone https://github.com/boikoaokn24-tech/taskboard.git
+
+## Зовнішній вигляд
+![Вивід програми](iamge.png)
