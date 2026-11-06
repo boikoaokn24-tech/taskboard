@@ -30,10 +30,10 @@ TaskBoard дозволяє створювати завдання, ставити
 ## Демо
 [Відкрити сайт](https://boikoaokn24-tech.github.io/taskboard/)
 
+## Зовнішній вигляд
+![Вивід програми](image.png)
+
 ## Як запустити
 1. Склонуй репозиторій:
 ```bash
 git clone https://github.com/boikoaokn24-tech/taskboard.git
-
-## Зовнішній вигляд
-![Скріншот TaskBoard](https://raw.githubusercontent.com/boikoakn24-tech/taskboard/main/image..png)
