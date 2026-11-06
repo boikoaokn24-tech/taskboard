@@ -2,18 +2,61 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>TaskBoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskBoard: дошка завдань</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Дошка завдань: керуй завданнями</h1>
-    <p>TaskBoard допоможе керувати завданнями команди.</p>
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span>TaskBoard</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про автора</a>
+        </nav>
+    </header>
 
-    <img src="images/logo.jpg" alt="Логотип TaskBoard" width="200">
+    <main class="container">
+        <section class="intro">
+            <h1>Дошка завдань</h1>
+            <p>TaskBoard допоможе записувати справи, ставити пріоритети та відмічати виконане. Це навчальний проєкт курсу «Технології створення веб-застосунків».</p>
+            <p>Автор: <strong>Артьом Бойко</strong>, група КН-3/1</p>
+        </section>
 
-    <p>Моя перша сторінка. Тут буде дошка завдань.</p>
+        <section class="card">
+            <h2>Нова задача</h2>
+            <form id="task-form" class="task-form">
+                <div class="form-row">
+                    <label class="field grow">
+                        <span>Назва</span>
+                        <input type="text" id="title" name="title" placeholder="Наприклад: підготувати звіт" required maxlength="80">
+                    </label>
+                    <label class="field">
+                        <span>Пріоритет</span>
+                        <select id="priority" name="priority">
+                            <option value="low">Низький</option>
+                            <option value="medium" selected>Середній</option>
+                            <option value="high">Високий</option>
+                        </select>
+                    </label>
+                    <label class="field">
+                        <span>Термін</span>
+                        <input type="date" id="deadline" name="deadline">
+                    </label>
+                </div>
+                <label class="field">
+                    <span>Опис</span>
+                    <textarea id="description" name="description" rows="3" placeholder="Додаткові деталі (необов'язково)"></textarea>
+                </label>
+                <button type="submit" class="btn">Додати задачу</button>
+                <p id="form-message" class="form-message" role="alert"></p>
+            </form>
+        </section>
+    </main>
 
-    <p>Автор: <strong>Артьом Бойко</strong>, група КН-3/1</p>
-
-    <a href="https://developer.mozilla.org/uk/">Довідник MDN</a>
+    <footer class="site-footer">
+        <p>&copy; 2026 TaskBoard · навчальний проєкт</p>
+    </footer>
 </body>
 </html>
